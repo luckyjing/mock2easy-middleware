@@ -48,7 +48,7 @@ server.listen(3005, function () {
 
 大家使用`webpack-dev-server`时，在命令行执行一句话`webpack-dev-server`即可跑起服务，但是我们是不能往其中植入`mock`服务的，所以我们使用了`express`搭配`webpack-dev-server-middleware`服务来手动实现一个`dev-server`，并且植入`mock`服务
 
-```
+```javascript
 var express = require('express');
 var webpack = require('webpack');
 var config = require('./webpack.config.dev'); // 导入webpack.config.js文件
@@ -77,7 +77,7 @@ app.listen(devServerPort, function () {
 这种情况下，便不需要使用本中间件了，直接使用`mock2easy`即可，步骤如下：
 
 1.在`webpack.config.js`中加入`mockeasy`的配置&运行代码
-```
+```javascript
 var mock2easy = require('mock2easy');
 
 var defaultConfig = {
@@ -98,7 +98,7 @@ mock2easy(defaultConfig, function (app) {
 ```
 
 2.在配置文件里的`devServer`字段增加如下内容
-```
+```javascript
   devServer: {
     proxy:{
       '/*.json':{
@@ -114,7 +114,7 @@ mock2easy(defaultConfig, function (app) {
 1.克隆本仓库
 2.`npm install`
 3.分别执行以下命令，体验不同`mock`融入方式
-```
+```sh
 npm run dev 前端资源使用express作为静态服务器
 npm run dev1 手动实现webpack-dev-server
 npm run dev2 不使用中间件，直接融入webpack.config.js
