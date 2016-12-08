@@ -1,0 +1,37 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "mock",
+               "name": "code",
+               "rule": "200",
+               "array": [],
+               "nameVerify": "name_1481186486000",
+               "ruleVerify": "rule_1481186486000"
+          },
+          {
+               "id": "02",
+               "kind": "object",
+               "name": "data",
+               "array": [],
+               "nameVerify": "name_1481186494000",
+               "ruleVerify": "rule_1481186494000"
+          },
+          {
+               "id": "0201",
+               "kind": "string",
+               "name": "name",
+               "rule": "mock server",
+               "array": [],
+               "nameVerify": "name_1481186506000",
+               "ruleVerify": "rule_1481186506000"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/demo.json",
+     "interfaceName": "/demo.json",
+     "lazyLoad": "no"
+}

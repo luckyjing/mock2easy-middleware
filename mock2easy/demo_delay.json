@@ -1,0 +1,29 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "mock",
+               "name": "code",
+               "rule": "200",
+               "array": [],
+               "nameVerify": "name_1481186523000",
+               "ruleVerify": "rule_1481186523000"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "msg",
+               "rule": "lazy load 3000ms",
+               "array": [],
+               "nameVerify": "name_1481186528000",
+               "ruleVerify": "rule_1481186528000"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/demo_delay.json",
+     "interfaceName": "/demo_delay.json",
+     "lazyLoad": "yes"
+}
