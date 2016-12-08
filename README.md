@@ -122,3 +122,7 @@ npm run dev # 前端资源使用express作为静态服务器
 npm run dev1 # 手动实现webpack-dev-server
 npm run dev2 # 不使用中间件，直接融入webpack.config.js
 ```
+
+## 后续
+
+1. 目前在对于接口命名的支持上，暂时只支持**以`.xxx`**（如`/profile.json`,`/profile.do`）作为后缀的接口，这样主要是为了方便区分静态资源接口和mock接口，下一步将对`RESTful`API提供支持
