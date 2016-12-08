@@ -1,6 +1,6 @@
 {
   "name": "mock2easy-middleware",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "mock server for connect or express",
   "main": "index.js",
   "scripts": {
