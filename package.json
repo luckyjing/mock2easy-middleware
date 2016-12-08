@@ -4,11 +4,15 @@
   "description": "mock server for connect or express",
   "main": "index.js",
   "scripts": {
-    "dev":"node test/base.js",
+    "dev": "node test/base.js",
     "dev1": "cd test && webpack-dev-server",
-    "dev2":"node test/work-with-webpack-dev-server.js"
+    "dev2": "node test/work-with-webpack-dev-server.js"
   },
   "author": "LuckyJing",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luckyjing/mock2easy-middleware"
+  },
   "license": "ISC",
   "dependencies": {
     "mock2easy": "^0.0.20",

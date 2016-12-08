@@ -112,10 +112,13 @@ mock2easy(defaultConfig, function (app) {
 ## Demo
 
 1.克隆本仓库
+
 2.`npm install`
+
 3.分别执行以下命令，体验不同`mock`融入方式
+
 ```sh
-npm run dev 前端资源使用express作为静态服务器
-npm run dev1 手动实现webpack-dev-server
-npm run dev2 不使用中间件，直接融入webpack.config.js
+npm run dev # 前端资源使用express作为静态服务器
+npm run dev1 # 手动实现webpack-dev-server
+npm run dev2 # 不使用中间件，直接融入webpack.config.js
 ```
