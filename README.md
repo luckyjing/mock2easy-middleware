@@ -52,7 +52,7 @@ server.listen(3005, function () {
 var express = require('express');
 var webpack = require('webpack');
 var config = require('./webpack.config.dev'); // 导入webpack.config.js文件
-var mock2easyMiddleware = require('../index.js');
+var mock2easyMiddleware = require('mock2easy-middleware');
 var devServerPort = config.devServer.port;
 var mockPort = 8005; // mock服务启动的端口
 
